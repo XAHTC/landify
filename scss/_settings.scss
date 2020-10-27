@@ -1,10 +1,35 @@
-/////////////////////////////////////////////////////////////////
+///////////////////////////CONTAINER/////////////////////////////
 $minwidth: 320px;
-$mw: 1170px;
+$mw: 1130px;
 $md1: $mw + 12;
 $md2: 992.98;
 $md3: 767.98;
 $md4: 479.98;
+/////////////////////////////COLORS//////////////////////////////
+$gray900: #18191F;
+$gray800: #474A57;
+$gray700: #969BAB;
+$gray300: #D9DBE1;
+$gray200: #EEEFF4;
+$gray100: #F4F5F7;
+$purple: #8C30F5;
+$purple800: #D6B1FF;
+$purple100: #F1E4FF;
+$turquoise: #2EC5CE;
+$turquoise800: #75E3EA;
+$turquoise100: #D5FAFC;
+$orange: #FE9A22;
+$orange800: #FFC278;
+$orange100: #FFE3C1;
+$pink: #F22BB2;
+$pink800: #FF72D2;
+$pink100: #FFB1E6;
+$green: #C1E5C0;
+$blue: #C0DAE5;
+$peach: #F39F9F;
+$lightpeach: #FDD9D9;
+$candy: #FFC3D8;
+$cyan: #A0DCFF;
 /////////////////////////////////////////////////////////////////
 .wrapper {
   display: flex;
@@ -18,7 +43,6 @@ $md4: 479.98;
   max-width: $mw;
   min-width: $minwidth;
   width: 100%;
-  padding: 0 10px;
   margin: 0 auto;
   @media (max-width: $md1) {max-width: 970px;}
   @media (max-width: $md2+px) {max-width: 750px;}
