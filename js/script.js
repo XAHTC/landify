@@ -17,6 +17,8 @@ $(document).ready(function () {
 function adaptiveButtons() {
   let w = $(window).outerWidth();
   let headerMenu = $('.menu__body');
+  let footerButtons = $('.footer__buttons');
+  let footerLogo = $('.footer__logo');
   let headerButton = $('.header__buttons');
   if (w < 768) {
     if (!headerButton.hasClass('done')) {
@@ -25,6 +27,15 @@ function adaptiveButtons() {
   } else {
     if (headerButton.hasClass('done')) {
       headerButton.removeClass('done').appendTo($('.header__row'));
+    }
+  }
+  if (w < 993) {
+    if (!footerLogo.hasClass('done')) {
+      footerLogo.addClass('done').prependTo(footerButtons);
+    }
+  } else {
+    if (footerLogo.hasClass('done')) {
+      footerLogo.removeClass('done').prependTo($('.footer__column')[0]);
     }
   }
 }
